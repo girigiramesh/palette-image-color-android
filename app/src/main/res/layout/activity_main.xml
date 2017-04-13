@@ -1,0 +1,46 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/image_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="#DD000000">
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:src="@mipmap/ic_launcher" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/image_layout"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:text="Title Text"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/body_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam dolor velit, vulputate ut justo sed, eleifend porta nisl. Ut gravida tristique blandit. Nullam elementum sapien ac sapien pellentesque blandit. Donec imperdiet ac ligula a egestas. Donec orci ante, cursus non eros vitae, ullamcorper lacinia mi. Suspendisse scelerisque tristique massa. Donec sodales dui id erat dapibus, at vestibulum neque egestas. Pellentesque bibendum tristique neque, et hendrerit lectus. Duis sed pellentesque lacus. Maecenas ac leo congue, euismod mi quis, semper purus." />
+
+</RelativeLayout>
